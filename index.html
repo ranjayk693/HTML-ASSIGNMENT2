@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-2-HTML</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      /* collapse the border of the table */
+      table {
+        border-collapse: collapse;
+      }
+
+      /* border of the table */
+      td,
+      th {
+        border: 1px solid black;
+      }
+
+      /* seeting the witdh of table */
+      table {
+        width: 60%;
+      }
+
+      /* setting all the table in center  */
+      .table-one,
+      .table-two,
+      .table-three,
+      .table-four {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      /* text alignment of table 1  */
+      .left-col {
+        text-align: left;
+      }
+      .center-col {
+        text-align: center;
+      }
+      .right-col {
+        text-align: right;
+      }
+
+      /*Table-4 in 2nd row */
+      .table4-col1,
+      .table4-col3 {
+        width: 20%;
+      }
+
+      /* background color for table4 in row1 */
+      .table4-row1 {
+        background-color: rgba(96, 116, 65, 255);
+      }
+
+      /* image size setting */
+      .table4-row2 {
+        height: 300px;
+      }
+
+      /* background color for table4 in row3 */
+      .table4-row3 {
+        background-color: rgba(37, 53, 94, 255);
+      }
+
+      /* seeting all the table data with same size  */
+      .table-two td,
+      .table-three td,
+      .table-four td {
+        height: 21.2px;
+      }
+
+      /* margin to give space of each table */
+      .table-one,
+      .table-two,
+      .table-three {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="table-one">
+      <!-- table creation -->
+      <table>
+        <!-- table row 1 -->
+        <tr>
+          <!-- table data with three entries  -->
+          <td class="left-col">left</td>
+          <td class="center-col">center</td>
+          <td class="right-col">right</td>
+        </tr>
+
+        <!-- table row 2 -->
+        <tr>
+          <td class="left-col">left</td>
+          <td class="center-col">center</td>
+          <td class="right-col">right</td>
+        </tr>
+
+        <!-- table row3 -->
+        <tr>
+          <td class="left-col">left</td>
+          <td class="center-col">center</td>
+          <td class="right-col">right</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Second Table -->
+    <section class="table-two">
+      <table>
+        <!-- table row 1 -->
+        <tr>
+          <!-- table heading with 6 cell of column merge -->
+          <th colspan="6">Heading</th>
+        </tr>
+
+        <!-- table row  2-->
+        <tr>
+          <!-- table data with 6 cell of column merge -->
+          <td colspan="6"></td>
+        </tr>
+
+        <!-- table row 3 -->
+        <tr>
+          <!-- table data with 4unit cell of rows merge  -->
+          <td rowspan="4"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- table row 4 -->
+        <tr>
+          <td></td>
+          <!--  -->
+          <td colspan="3"></td>
+          <td></td>
+        </tr>
+
+        <!-- table row 5 -->
+        <tr>
+          <td></td>
+          <td colspan="3"></td>
+          <td></td>
+        </tr>
+
+        <!-- table row 6 -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- table row 7 -->
+        <tr>
+          <td colspan="6"></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- table number 3 -->
+    <section class="table-three">
+      <table>
+        <tr>
+          <!-- three empty table data merge -->
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <!-- table data with 4 unit of row merge -->
+          <td rowspan="4"></td>
+          <td></td>
+          <td rowspan="4"></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- table number 4 -->
+    <section class="table-four">
+      <table>
+        <tr class="table4-row1">
+          <td colspan="3"></td>
+        </tr>
+        <tr class="table4-row2">
+          <td class="table4-col1"></td>
+          <td class="table4-col2">
+            <!-- image insertion -->
+            <img src="Capture.PNG" width="90%" height="250px" alt="" />
+          </td>
+          <td class="table4-col3"></td>
+        </tr>
+        <tr class="table4-row3">
+          <td colspan="3"></td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
